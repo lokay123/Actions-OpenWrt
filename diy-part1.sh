@@ -25,3 +25,6 @@ git clone https://github.com/lkiuyu/luci-app-cpu-status package/luci-app-cpu-sta
 git clone https://github.com/lkiuyu/luci-app-temp-status package/luci-app-temp-status
 git clone https://github.com/lkiuyu/DbusSmsForwardCPlus package/DbusSmsForwardCPlus
 git clone https://github.com/linkease/istore package/istore
+
+# turboacc
+curl -sSL https://raw.githubusercontent.com/Jaykwok2999/turboacc/luci/add_turboacc.sh -o add_turboacc.sh && bash add_turboacc.sh --no-sfe
