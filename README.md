@@ -44,7 +44,6 @@ kmod-rtw88-8822cs
 
 kmod-rtw88-8822cu和rtl8812cu通用
 
-kmod-rtl8188eu
 
 
 需要其他插件自行通过config_small配置添加，注意同时开启对应依赖选项
