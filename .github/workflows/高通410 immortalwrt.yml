@@ -107,13 +107,6 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
         
-    - name: Update istore
-      working-directory: openwrt
-      run: |
-       ./scripts/feeds update istore
-       
-       ./scripts/feeds install -d y -p istore luci-app-store
-
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
@@ -128,6 +121,13 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
+        
+    - name: Update istore
+      working-directory: openwrt
+      run: |
+       ./scripts/feeds update istore
+       
+       ./scripts/feeds install -d y -p istore luci-app-store
         
     - name: SSH connection to Actions
       uses: csexton/debugger-action@master
